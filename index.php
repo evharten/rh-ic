@@ -1,6 +1,6 @@
 <?php
 include("competities.php");
-echo "<PRE>";print_r($competities);echo "</PRE>";
+
 ?>
 <html>
 <head>
@@ -12,9 +12,9 @@ echo "<PRE>";print_r($competities);echo "</PRE>";
 <tr><td>Competitie</td><td>
 <select name="aantal">
 <?php
-foreach($competities AS $compName => $aantal)
+foreach($competities AS $compIndex => $compData)
 {
-	echo "<option value=\"$aantal\">$compName</option>\n";
+	echo "<option value=\"$compIndex\">".$compData[0]."</option>\n";
 }
 ?>
 </select>
