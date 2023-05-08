@@ -4,6 +4,14 @@ include("competities.php");
 
 require_once("fpdf/fpdf.php");
 
+
+echo "<PRE>";
+print_r($_REQUEST);
+echo "</PRE>";
+die();
+
+
+
 // $achternaam = html_entity_decode($_GET['achternaam']);
 $achternaam = iconv('UTF-8', 'windows-1252', html_entity_decode($_GET['achternaam']));
 
