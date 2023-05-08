@@ -1,6 +1,6 @@
 <?php
 include("competities.php");
-
+echo "<PRE>";print_r($competities);echo "</PRE>";
 ?>
 <html>
 <head>
