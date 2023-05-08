@@ -4,10 +4,16 @@ include("competities.php");
 
 require_once("fpdf/fpdf.php");
 
-
+$competitie = $competities[$_POST['competitie']];
 echo "<PRE>";
 print_r($_REQUEST);
+print_r($competitie);
 echo "</PRE>";
+
+
+
+
+
 die();
 
 
