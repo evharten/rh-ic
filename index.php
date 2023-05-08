@@ -10,7 +10,7 @@ include("competities.php");
 <form action="pdf.php" method="POST">
 <table>
 <tr><td>Competitie</td><td>
-<select name="aantal">
+<select name="competitie">
 <?php
 foreach($competities AS $compIndex => $compData)
 {
@@ -19,8 +19,8 @@ foreach($competities AS $compIndex => $compData)
 ?>
 </select>
 </td></tr>
-<tr><td>Naam</td><td><input type="name" size=40></td></tr>
-<tr><td>KNSA Nummer</td><td><input type="knsa" size=40></td></tr>
+<tr><td>Naam</td><td><input type="text" name="naam" size=40></td></tr>
+<tr><td>KNSA Nummer</td><td><input type="text" name="knsa" size=40></td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
 <tr><td colspan="2"><input type="submit" name="Stickers genereren"></td></tr>
