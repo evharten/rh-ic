@@ -23,6 +23,8 @@ for ($x = 0; $x < 24; $x++)
 	if ($hCount >= 3)
 	{
 		$pdf->SetX(0);
+	} else {
+		$pdf->SetX($pdf->GetX()+20);
 	}
 	
 	if (($x+1) <= $aantal)
