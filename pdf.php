@@ -30,20 +30,14 @@ for ($x = 0; $x < 24; $x++)
 	if (($x+1) <= $aantal)
 	{
 		$pdf->SetFont('Helvetica','B',14);
-		$pdf->Cell(20,10,$compNaam,0,0);
-		$pdf->Ln(5);
-		$pdf->Cell(20,10,"Naam: $naam",0,0);
-		$pdf->Ln(5);
-		$pdf->Cell(20,10,"KNSA: $knsanummer",0,0);
-		$pdf->Ln(5);
+		$pdf->Cell(20,10,$compNaam,0,1);
+		$pdf->Cell(20,10,"Naam: $naam",0,1);
+		$pdf->Cell(20,10,"KNSA: $knsanummer",0,1);
 	} else {
 		$pdf->SetFont('Helvetica','B',14);
-		$pdf->Cell(20,10,"",0,0);
-		$pdf->Ln(5);
-		$pdf->Cell(20,10,"",0,0);
-		$pdf->Ln(5);
-		$pdf->Cell(20,10,"",0,0);		
-		$pdf->Ln(5);
+		$pdf->Cell(20,10,"",0,1);
+		$pdf->Cell(20,10,"",0,1);
+		$pdf->Cell(20,10,"",0,1);		
 	}
 	$hCount++;
 	
