@@ -5,119 +5,33 @@ include("competities.php");
 require_once("fpdf/fpdf.php");
 
 $competitie = $competities[$_POST['competitie']];
-echo "<PRE>";
-print_r($_REQUEST);
-print_r($competitie);
-echo "</PRE>";
-
-
-
-
-
-die();
-
-
-
-// $achternaam = html_entity_decode($_GET['achternaam']);
-$achternaam = iconv('UTF-8', 'windows-1252', html_entity_decode($_GET['achternaam']));
+$compNaam = $competitie[0];
+$aantal = $competitie[1];
+$naam = $_REQUEST['naam'];
+$knsanummer = $_REQUEST['knsa'];
 
 $pdf=new FPDF('P','mm','A4');
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $page++;
-$pdf->SetFont('Helvetica','B',14);
-$pdf->Cell(50,10,"Wedstrijduitslag ".$wedstrijd.' - '.$_GET['tijd']." (baan ".$_GET['baan'].")",0,0);
-$pdf->Ln(6);
-$pdf->SetFont('Helvetica','B',12);
-$naam = ltrim($_GET['voorletter']." ".$achternaam);
-$pdf->Cell(10,10,$naam,0,0);$pdf->SetFont('Helvetica','',12);
-$pdf->Ln(6);
-$pdf->Cell(10,10,"KNSA-nummer: ".$_GET['knsa'],0,0);
-$pdf->Ln(6);
-$pdf->Cell(10,10,"Dicipline: ".$_GET['dicipline'],0,0);
-$pdf->Ln(6);$pdf->Ln(6);
-$pdf->SetFont('Helvetica','B',12);
 
-$pdf->Cell(10,10,"Uitslag / wedstrijdbriefje",'',12);
-$pdf->Ln(6);
-$pdf->SetFont('Helvetica','B',12);
+for ($x = 0; $x < 24; $x++)
+{
+	// 24 labels to go on the paper
+	if (($x+1) <= $aantal)
+	{
+		$pdf->SetFont('Helvetica','B',14);
+		$pdf->Cell(20,10,$compNaam,1,0);
+		$pdf->Cell(20,10,"Naam: $naam",1,0);
+		$pdf->Cell(20,10,"KNSA: $knsanummer",1,0);
+	} else {
+		$pdf->SetFont('Helvetica','B',14);
+		$pdf->Cell(20,10,"",1,0);
+		$pdf->Cell(20,10,"",1,0);
+		$pdf->Cell(20,10,"",1,0);		
+	}
+}
 
-
-
-$pdf->Cell(50,10,'Schoten links',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Ln(10);
-$pdf->Cell(50,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Ln(10);
-$pdf->Ln(10);
-
-$pdf->Cell(50,10,'Schoten rechts',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Ln(10);
-$pdf->Cell(50,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-$pdf->Cell(20,10,'',1,0);
-
-$pdf->Ln(10);$pdf->Ln(10);
-// $pdf->SetFont('Helvetica','B',12);
-// $pdf->Cell(50,10,'Totaalscore',1,0);
-// $pdf->SetFont('Helvetica','',12);
-// $pdf->Cell(50,10,'',1,0);
-// $pdf->Cell(50,10,'  (Totale score, dus bijv. 238)',0,0);
-// $pdf->Ln(10);
-// $pdf->SetFont('Helvetica','',9);
-// $pdf->Cell(50,10,'Indien sprake van diskwalificatie, een kruis plaatsen door de scorevlakken en bij totaalscore DSQ schrijven',0,0);
-// $pdf->Ln(10);
-// $pdf->Ln(10);
-$pdf->SetFont('Helvetica','B',12);
-$pdf->Cell(50,10,'Opmerking(en) van Baancommandant',0,0);
-$pdf->Ln(10);$pdf->Ln(10);$pdf->Ln(10);
-$pdf->SetFont('Helvetica','B',12);
-$pdf->Cell(50,10,'Handtekening voor akkoord',0,0);
-$pdf->Ln(10);
-
-$pdf->SetFont('Helvetica','B',12);
-$pdf->Cell(80,25,'Schutter',1,0);
-
-$pdf->Cell(80,25,'',1,0);
-$pdf->Ln(25);
-$pdf->Cell(50,10,'Verwerkt in MatchMaker',0,0);
-
-$pdf->Ln(10);
-$pdf->SetFont('Helvetica','B',12);
-$pdf->Cell(80,25,'Administratie',1,0);
-$pdf->SetFont('Helvetica','',12);
-$pdf->Cell(80,25,'',1,0);
-$pdf->Ln(40);
-
-$qr = "https://chart.googleapis.com/chart?cht=qr&chs=100&chl=".$_GET['knsa']."&.png";
-$pdf->Image($vereniging['logo'],10,230,30);
-$pdf->Image($qr,175,260,30,0,"PNG");
-
-$pdf->Cell(40,12,'',0,0);$pdf->Cell(80,12,$vereniging['naam'],0,0);$pdf->Ln(6);
-$pdf->Cell(40,12,'',0,0);$pdf->Cell(80,12,$vereniging['adres'],0,0);$pdf->Ln(6);
-$pdf->Cell(40,12,'',0,0);$pdf->Cell(80,12,$vereniging['postcode']." ".$vereniging['plaats'],0,0);$pdf->Ln(6);
-$pdf->Cell(40,12,'',0,0);$pdf->Cell(80,12,'KNSA: '.$vereniging['knsa'],0,0);$pdf->Ln(6);
-$pdf->Output("Scoreformulier_".$_GET['knsa'].".pdf", 'I');
+$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
 	
 ?>
