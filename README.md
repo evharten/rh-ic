@@ -1,1 +1,3 @@
-# rh-ic
+# RH-IC
+#
+# Internal use
