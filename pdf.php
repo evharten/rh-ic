@@ -13,19 +13,11 @@ $naam = $_REQUEST['naam'];
 $knsanummer = $_REQUEST['knsa'];
 $page = 0;
 
-<<<<<<< HEAD
-// $pdf = new PDF_Label(array('paper-size'=>'A4', 'metric'=>'mm', 'marginLeft'=>6, 'marginTop'=>12, 'NX'=>3, 'NY'=>8, 'SpaceX'=>1, 'SpaceY'=>0, 'width'=>70, 'height'=>35, 'font-size'=>12));
-//$pdf = new PDF_Label('staples');
-$pdf = new PDF_Label('quantore');
-$pdf->AddPage();
-
-for ($x = 0; $x < $aantal; $x++)
-=======
 if ($typeComp == "sticker")
->>>>>>> eb28d294e1f6f317fc8cdad957bb6b6babf81832
 {
 	// $pdf = new PDF_Label(array('paper-size'=>'A4', 'metric'=>'mm', 'marginLeft'=>6, 'marginTop'=>12, 'NX'=>3, 'NY'=>8, 'SpaceX'=>1, 'SpaceY'=>0, 'width'=>70, 'height'=>35, 'font-size'=>12));
-	$pdf = new PDF_Label('staples');
+	//$pdf = new PDF_Label('staples');
+	$pdf = new PDF_Label('quantore');
 	$pdf->AddPage();
 
 	for ($x = 0; $x < $aantal; $x++)
@@ -188,15 +180,6 @@ if ($typeComp == "sticker")
 	
 	
 	
-	
-	
-	
-	
-	
-<<<<<<< HEAD
-?>
-=======
 	$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
 }	 
 ?>
->>>>>>> eb28d294e1f6f317fc8cdad957bb6b6babf81832
