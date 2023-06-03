@@ -88,6 +88,21 @@ if ($typeComp == "sticker")
 	$pdf->Rect(70, 122, 10, 10, 'DF');	// Rechter
 	$pdf->Rect(90, 122, 10, 10, 'DF');	// Totaal
 	
+	$pdf->Rect(50, 132, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 132, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 132, 10, 10, 'DF');	// Totaal
+	
+	$pdf->Rect(50, 142, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 142, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 142, 10, 10, 'DF');	// Totaal
+	
+	$pdf->Rect(50, 152, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 152, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 152, 10, 10, 'DF');	// Totaal
+	
+	$pdf->Rect(50, 162, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 162, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 162, 10, 10, 'DF');	// Totaal
 	
 	// Totaal score
 	
