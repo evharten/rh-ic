@@ -85,7 +85,7 @@ if ($typeComp == "sticker")
 	// Vakjes
 	$pdf->SetFillColor(255);
 	$pdf->Rect(50, 122, 10, 10, 'DF');	// Linker
-	$pdf->SetXY(65, 123);
+	$pdf->SetXY(63, 123);
 	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 122, 10, 10, 'DF');	// Rechter
 	$pdf->SetXY(70, 125);
