@@ -88,10 +88,10 @@ if ($typeComp == "sticker")
 	$pdf->SetXY(63, 123);
 	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 122, 10, 10, 'DF');	// Rechter
-	$pdf->SetXY(70, 125);
+	$pdf->SetXY(78, 123);
 	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 122, 10, 10, 'DF');	// Totaal
-	$pdf->SetXY(90, 125);
+	$pdf->SetXY(101, 123);
 	$pdf->Cell(10, 8, 'x 10 =');
 	
 	$pdf->Rect(50, 134, 10, 10, 'DF');	// Linker
