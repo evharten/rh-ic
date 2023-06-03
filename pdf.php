@@ -155,9 +155,9 @@ if ($typeComp == "sticker")
 	$pdf->Rect(85, 213, 70, 10, 'DF');	// Totaal Score
 	
 	// Handtekening medeschutter
-	$pdf->SetXY(30, 225);
+	$pdf->SetXY(30, 227);
 	$pdf->Cell(20, 8, 'Handtekening medeschutter');
-	$pdf->Rect(85, 225, 70, 10, 'DF');	// Totaal Score
+	$pdf->Rect(85, 227, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
 	
