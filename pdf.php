@@ -1,6 +1,7 @@
 <?php
 include("competities.php");
 require_once("fpdf/fpdf.php");
+require_once("fpdf/rpdf.php");
 require_once('pdfLabel.php');
 
 $competitie = $competities[$_POST['competitie']];
@@ -28,7 +29,7 @@ if ($typeComp == "sticker")
 }
  else 
 {
-	$pdf = new FPDF();
+	$pdf = new RPDF();
 	$pdf->AddPage();
 	$pdf->SetFillColor(220);
 	$pdf->Rect(20, 15, 165, 200, 'DF');
