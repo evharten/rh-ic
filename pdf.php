@@ -39,6 +39,9 @@ if ($typeComp == "sticker")
 	$pdf->Cell(100, 10, "Interne Competitie Service Pistool");
 	
 	// Naam Schutter
+	$pdf->SetFillColor(255);
+	$pdf->Rect(65, 50, 65, 8, 'DF');
+	$pdf->SetXY(30, 70, "Naam Schutter");
 	
 	// Wedstrijd Datum
 	
