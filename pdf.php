@@ -42,7 +42,8 @@ if ($typeComp == "sticker")
 	$pdf->SetFillColor(255);
 	$pdf->Rect(65, 50, 65, 8, 'DF');
 	$pdf->SetFont('Arial','B',10);
-	$pdf->SetXY(30, 90, "Naam Schutter");
+	$pdf->SetXY(30, 70);
+	$pdf->Cell(40, 8, "Naam Schutter");
 	
 	// Wedstrijd Datum
 	
