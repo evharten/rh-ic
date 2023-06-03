@@ -1,7 +1,7 @@
 <?php
 include("competities.php");
 require_once("fpdf/fpdf.php");
-require('pdfLabel.php');
+require_once('pdfLabel.php');
 
 $competitie = $competities[$_POST['competitie']];
 $compNaam = $competitie[0];
@@ -28,8 +28,10 @@ if ($typeComp == "sticker")
 }
  else 
 {
-	$pdf = new FPDF('A4');
+	$pdf = new FPDF();
 	$pdf->AddPage();
+	$pdf->SetFont('Arial','B',16);
+	$pdf->Cell(40,10,'Hello World!');
 	$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
 }	 
 ?>
