@@ -54,7 +54,7 @@ if ($typeComp == "sticker")
 	$pdf->SetXY(30, 60);
 	$pdf->Cell(40, 8, "Wedstrijd datum");
 	$pdf->SetXY(66, 60);
-	$pdf->Cell(40, 8, "              -             -     ".date("Y"));
+	$pdf->Cell(40, 8, "            -           -   ".date("Y"));
 	
 	// KNSA Nummer
 	$pdf->SetFillColor(255);
