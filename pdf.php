@@ -32,7 +32,7 @@ if ($typeComp == "sticker")
 	$pdf = new RPDF();
 	$pdf->AddPage();
 	$pdf->SetFillColor(220);
-	$pdf->Rect(20, 15, 165, 210, 'DF');
+	$pdf->Rect(20, 15, 165, 230, 'DF');
 	$pdf->SetFont('Arial','B',16);
 	// Logo + Tekst
 	$pdf->Image('logo_rh_trans.png', 30, 25, 20, 20);
@@ -145,19 +145,19 @@ if ($typeComp == "sticker")
 	$pdf->Rect(105, 182, 50, 10, 'DF');	// Totaal Score
 	
 	// Handtekening schutter
-	$pdf->SetXY(30, 195);
+	$pdf->SetXY(30, 200);
 	$pdf->Cell(20, 8, 'Handtekening schutter');
-	$pdf->Rect(95, 195, 70, 10, 'DF');	// Totaal Score
+	$pdf->Rect(85, 200, 70, 10, 'DF');	// Totaal Score
 	
 	// Naam Medeschutter
-	$pdf->SetXY(30, 205);
+	$pdf->SetXY(30, 213);
 	$pdf->Cell(20, 8, 'Naam medeschutter');
-	$pdf->Rect(95, 205, 70, 10, 'DF');	// Totaal Score
+	$pdf->Rect(85, 213, 70, 10, 'DF');	// Totaal Score
 	
 	// Handtekening medeschutter
-	$pdf->SetXY(30, 215);
+	$pdf->SetXY(30, 223);
 	$pdf->Cell(20, 8, 'Handtekening medeschutter');
-	$pdf->Rect(95, 215, 70, 10, 'DF');	// Totaal Score
+	$pdf->Rect(85, 223, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
 	
