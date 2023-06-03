@@ -30,8 +30,43 @@ if ($typeComp == "sticker")
 {
 	$pdf = new FPDF();
 	$pdf->AddPage();
+	$pdf->SetFillColor(220);
+	$pdf->Rect(20, 15, 165, 200, 'DF');
 	$pdf->SetFont('Arial','B',16);
-	$pdf->Cell(40,10,'Hello World!');
+	// Logo + Tekst
+	$pdf->Image('logo_rh_trans.png', 30, 25, 20, 20);
+	$pdf->SetXY(60, 30);
+	$pdf->Cell(100, 10, "Interne Competitie Service Pistool");
+	
+	// Naam Schutter
+	
+	// Wedstrijd Datum
+	
+	// KNSA Nummer
+	
+	// Wedstrijd x van 6
+	
+	// Kaart definities en score vakjes
+	
+	// Totaal score
+	
+	// Handtekening schutter
+	
+	// Naam Medeschutter
+	
+	// Handtekening medeschutter
+	
+	// Uitleg competitie
+	
+	// SP instructies pagina 2 (2 zijdig printen!)
+	
+	
+	
+	
+	
+	
+	
+	
 	$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
 }	 
 ?>
