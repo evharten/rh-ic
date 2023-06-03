@@ -31,7 +31,7 @@ if ($typeComp == "sticker")
 {
 	$pdf = new RPDF();
 	$pdf->AddPage();
-	$pdf->SetFillColor(220);
+	$pdf->SetFillColor(255);
 	$pdf->Rect(20, 15, 165, 225, 'DF');
 	$pdf->SetFont('Arial','B',16);
 	// Logo + Tekst
