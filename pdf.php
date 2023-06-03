@@ -160,7 +160,7 @@ if ($typeComp == "sticker")
 	$pdf->Rect(85, 222, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
-	$curX = 15;
+	$curX = 20;
 	$curY = 240;
 	$pdf->SetFont('Arial','',6);
 	
@@ -170,7 +170,7 @@ if ($typeComp == "sticker")
 		$pdf->Cell(10, 8, $lineTekst);
 		
 		$curX = $curX;
-		$curY = $curY+4;
+		$curY = $curY+3;
 	}
 	
 	
