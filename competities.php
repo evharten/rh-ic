@@ -17,13 +17,13 @@ $competities[] = array("Groot kaliber geweer 50 m liggend", "30","sticker");
 $competities[] = array("POK (Precisie geweer open klasse)", "30","sticker");
 
 
-$spInstructie = "Versie 2023. De interne competitie Service Pistool wordt verschoten volgens het KNSA regelement.\n\n";
-$spInstructie .= "De interne competitie loopt vanaf de eerstvolgende openingsavond/dag na de prijsuitreiking tot 15 december van het lopende\n";
-$spInstructie .= "kalender jaar.\n\n";
-$spInstructie .= "De interne competitie bestaat uit zes wedstrijden. De laagste wedstrijdscore van deze zes wedstrijden vervalt. Indien er meer dan zes\n";
-$spInstructie .= "wedstrijden worden ingeleverd, vervalt de hoogste score. De winnaar van de interne competitie is degene met de hoogste score van\n";
-$spInstructie .= "het totaal van de vijf overgebleven wedstrijden. Bij gelijke eindstand van de 5 wedstrijden telt de hoogste score van een individuele\n";
-$spInstructie .= "wedstrijd. Bij gelijke score van een individuele wedstrijd telt het hoogste aantal getelde tienen van de 5 wedstrijdscores.\n\n";
-$spInstructie .= "Dit formulier wordt altijd door de schutter zelf en door een medeschutter ondertekend. Zonder deze tewe handtekeningen is de score\n";
-$spInstructie .= "ongeldig.";
+$spInstructie[] = "Versie 2023. De interne competitie Service Pistool wordt verschoten volgens het KNSA regelement.";
+$spInstructie[] = "De interne competitie loopt vanaf de eerstvolgende openingsavond/dag na de prijsuitreiking tot 15 december van het lopende";
+$spInstructie[] = "kalender jaar.";
+$spInstructie[] = "De interne competitie bestaat uit zes wedstrijden. De laagste wedstrijdscore van deze zes wedstrijden vervalt. Indien er meer dan zes";
+$spInstructie[] = "wedstrijden worden ingeleverd, vervalt de hoogste score. De winnaar van de interne competitie is degene met de hoogste score van";
+$spInstructie[] = "het totaal van de vijf overgebleven wedstrijden. Bij gelijke eindstand van de 5 wedstrijden telt de hoogste score van een individuele";
+$spInstructie[] = "wedstrijd. Bij gelijke score van een individuele wedstrijd telt het hoogste aantal getelde tienen van de 5 wedstrijdscores.";
+$spInstructie[] = "Dit formulier wordt altijd door de schutter zelf en door een medeschutter ondertekend. Zonder deze tewe handtekeningen is de score";
+$spInstructie[] = "ongeldig.";
 ?>

@@ -160,8 +160,17 @@ if ($typeComp == "sticker")
 	$pdf->Rect(85, 222, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
-	$pdf->SetXY(15, 227);
-	$pdf->Cell(200, 80, $spInstructie);
+	$curX = 15;
+	$curY = 227;
+	
+	foreach ($spInstructie AS $lineNR => $lineTekst)
+	{
+		$pdf->SetXY($curX, $curY);
+		$pdf->Cell(200, 80, $lineTekst);
+		
+		$curX = $curX;
+		$curY = $curY+5;
+	}
 	
 	
 	
