@@ -170,7 +170,7 @@ if ($typeComp == "sticker")
 		$pdf->Cell(10, 8, $lineTekst);
 		
 		$curX = $curX;
-		$curY = $curY+5;
+		$curY = $curY+4;
 	}
 	
 	
