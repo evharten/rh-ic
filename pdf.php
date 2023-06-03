@@ -139,18 +139,25 @@ if ($typeComp == "sticker")
 	$pdf->Cell(10, 8, 'x 6 =');
 	$pdf->Rect(115, 170, 40, 10, 'DF');	// Totaal
 	
+	// Totaal score
 	$pdf->SetXY(80, 183);
 	$pdf->Cell(20, 8, 'Totaal score');
-	
 	$pdf->Rect(105, 182, 50, 10, 'DF');	// Totaal Score
 	
-	// Totaal score
-	
 	// Handtekening schutter
+	$pdf->SetXY(30, 195);
+	$pdf->Cell(20, 8, 'Handtekening schutter');
+	$pdf->Rect(95, 195, 70, 10, 'DF');	// Totaal Score
 	
 	// Naam Medeschutter
+	$pdf->SetXY(30, 205);
+	$pdf->Cell(20, 8, 'Naam medeschutter');
+	$pdf->Rect(95, 205, 70, 10, 'DF');	// Totaal Score
 	
 	// Handtekening medeschutter
+	$pdf->SetXY(30, 215);
+	$pdf->Cell(20, 8, 'Handtekening medeschutter');
+	$pdf->Rect(95, 215, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
 	
