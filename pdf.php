@@ -166,7 +166,7 @@ if ($typeComp == "sticker")
 	foreach ($spInstructie AS $lineNR => $lineTekst)
 	{
 		$pdf->SetXY($curX, $curY);
-		$pdf->Cell(200, 80, $lineTekst);
+		$pdf->Cell(10, 8, $lineTekst);
 		
 		$curX = $curX;
 		$curY = $curY+5;
