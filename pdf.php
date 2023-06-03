@@ -162,6 +162,7 @@ if ($typeComp == "sticker")
 	// Uitleg competitie
 	$curX = 15;
 	$curY = 227;
+	$pdf->SetFont('Arial','',8);
 	
 	foreach ($spInstructie AS $lineNR => $lineTekst)
 	{
