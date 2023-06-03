@@ -53,7 +53,7 @@ if ($typeComp == "sticker")
 	$pdf->Rect(65, 60, 40, 8, 'DF');
 	$pdf->SetFont('Arial','B',10);
 	$pdf->SetXY(30, 60);
-	$pdf->Cell(40, 8, "Wedstrijd datum");
+	$pdf->Cell(40, 8, "Wedstrijddatum");
 	$pdf->SetXY(66, 60);
 	$pdf->Cell(40, 8, "           -           -   ".date("Y"));
 	
@@ -62,7 +62,7 @@ if ($typeComp == "sticker")
 	$pdf->Rect(65, 70, 20, 8, 'DF');
 	$pdf->SetFont('Arial','B',10);
 	$pdf->SetXY(30, 70);
-	$pdf->Cell(40, 8, "KNSA nummer");
+	$pdf->Cell(40, 8, "KNSA-nummer");
 	$pdf->SetXY(66, 70);
 	$pdf->Cell(20, 8, $knsanummer);
 	
