@@ -1,6 +1,4 @@
 <?php
-require('fpdf.php');
-
 class RPDF extends FPDF {
 
 	function TextWithDirection($x, $y, $txt, $direction='R')
