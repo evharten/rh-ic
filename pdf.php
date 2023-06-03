@@ -88,27 +88,51 @@ if ($typeComp == "sticker")
 	$pdf->SetXY(63, 123);
 	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 122, 10, 10, 'DF');	// Rechter
-	$pdf->SetXY(82, 123);
+	$pdf->SetXY(83, 123);
 	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 122, 10, 10, 'DF');	// Totaal
 	$pdf->SetXY(101, 123);
 	$pdf->Cell(10, 8, 'x 10 =');
 	
 	$pdf->Rect(50, 134, 10, 10, 'DF');	// Linker
+	$pdf->SetXY(63, 135);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 134, 10, 10, 'DF');	// Rechter
+	$pdf->SetXY(83, 135);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 134, 10, 10, 'DF');	// Totaal
+	$pdf->SetXY(101, 135);
+	$pdf->Cell(10, 8, 'x 9 =');
 	
 	$pdf->Rect(50, 146, 10, 10, 'DF');	// Linker
+	$pdf->SetXY(63, 147);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 146, 10, 10, 'DF');	// Rechter
+	$pdf->SetXY(83, 147);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 146, 10, 10, 'DF');	// Totaal
+	$pdf->SetXY(101, 147);
+	$pdf->Cell(10, 8, 'x 8 =');
 	
 	$pdf->Rect(50, 158, 10, 10, 'DF');	// Linker
+	$pdf->SetXY(63, 159);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 158, 10, 10, 'DF');	// Rechter
+	$pdf->SetXY(83, 159);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 158, 10, 10, 'DF');	// Totaal
+	$pdf->SetXY(101, 159);
+	$pdf->Cell(10, 8, 'x 7 =');
 	
 	$pdf->Rect(50, 170, 10, 10, 'DF');	// Linker
+	$pdf->SetXY(63, 171);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(70, 170, 10, 10, 'DF');	// Rechter
+	$pdf->SetXY(83, 171);
+	$pdf->Cell(8, 8, '+');
 	$pdf->Rect(90, 170, 10, 10, 'DF');	// Totaal
+	$pdf->SetXY(101, 171);
+	$pdf->Cell(10, 8, 'x 6 =');
 	
 	// Totaal score
 	
