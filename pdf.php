@@ -84,9 +84,9 @@ if ($typeComp == "sticker")
 	
 	// Vakjes
 	$pdf->SetFillColor(255);
-	$pdf->Rect(50, 125, 10, 10, 'DF');	// Linker
-	$pdf->Rect(70, 125, 10, 10, 'DF');	// Rechter
-	$pdf->Rect(90, 125, 10, 10, 'DF');	// Totaal
+	$pdf->Rect(50, 120, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 120, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 120, 10, 10, 'DF');	// Totaal
 	
 	
 	// Totaal score
