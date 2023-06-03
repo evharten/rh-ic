@@ -82,6 +82,13 @@ if ($typeComp == "sticker")
 	$pdf->Rect(90, 80, 10, 40, 'DF');	// Totaal
 	$pdf->TextWithDirection(96,115,'Totaal vd kaarten','U');
 	
+	// Vakjes
+	$pdf->SetFillColor(255);
+	$pdf->Rect(50, 125, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 125, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 125, 10, 10, 'DF');	// Totaal
+	
+	
 	// Totaal score
 	
 	// Handtekening schutter
