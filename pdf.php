@@ -73,8 +73,11 @@ if ($typeComp == "sticker")
 	$pdf->SetXY(120, 70);
 	$pdf->Cell(20, 8, "wedstrijd van de 6");
 	
-	
 	// Kaart definities en score vakjes
+	$pdf->SetFillColor(255);
+	$pdf->Rect(50, 80, 10, 40, 'DF');	// Linker
+	$pdf->Rect(60, 80, 10, 40, 'DF');	// Rechter
+	$pdf->Rect(70, 80, 10, 40, 'DF');	// Totaal
 	
 	// Totaal score
 	
