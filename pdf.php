@@ -76,11 +76,11 @@ if ($typeComp == "sticker")
 	// Kaart definities en score vakjes
 	$pdf->SetFillColor(255);
 	$pdf->Rect(50, 80, 10, 40, 'DF');	// Linker
-	$pdf->TextWithDirection(80,55,'Linker Kaart','D');
+	$pdf->TextWithDirection(55,80,'Linker Kaart','U');
 	$pdf->Rect(70, 80, 10, 40, 'DF');	// Rechter
-	$pdf->TextWithDirection(80,65,'Rechter Kaart','D');
+	$pdf->TextWithDirection(75,80,'Rechter Kaart','U');
 	$pdf->Rect(90, 80, 10, 40, 'DF');	// Totaal
-	$pdf->TextWithDirection(80,75,'Totaal vd kaarten','D');
+	$pdf->TextWithDirection(95,80,'Totaal vd kaarten','U');
 	
 	// Totaal score
 	
