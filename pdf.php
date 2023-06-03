@@ -88,21 +88,21 @@ if ($typeComp == "sticker")
 	$pdf->Rect(70, 122, 10, 10, 'DF');	// Rechter
 	$pdf->Rect(90, 122, 10, 10, 'DF');	// Totaal
 	
-	$pdf->Rect(50, 132, 10, 10, 'DF');	// Linker
-	$pdf->Rect(70, 132, 10, 10, 'DF');	// Rechter
-	$pdf->Rect(90, 132, 10, 10, 'DF');	// Totaal
+	$pdf->Rect(50, 134, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 134, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 134, 10, 10, 'DF');	// Totaal
 	
-	$pdf->Rect(50, 142, 10, 10, 'DF');	// Linker
-	$pdf->Rect(70, 142, 10, 10, 'DF');	// Rechter
-	$pdf->Rect(90, 142, 10, 10, 'DF');	// Totaal
+	$pdf->Rect(50, 146, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 146, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 146, 10, 10, 'DF');	// Totaal
 	
-	$pdf->Rect(50, 152, 10, 10, 'DF');	// Linker
-	$pdf->Rect(70, 152, 10, 10, 'DF');	// Rechter
-	$pdf->Rect(90, 152, 10, 10, 'DF');	// Totaal
+	$pdf->Rect(50, 158, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 158, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 158, 10, 10, 'DF');	// Totaal
 	
-	$pdf->Rect(50, 162, 10, 10, 'DF');	// Linker
-	$pdf->Rect(70, 162, 10, 10, 'DF');	// Rechter
-	$pdf->Rect(90, 162, 10, 10, 'DF');	// Totaal
+	$pdf->Rect(50, 170, 10, 10, 'DF');	// Linker
+	$pdf->Rect(70, 170, 10, 10, 'DF');	// Rechter
+	$pdf->Rect(90, 170, 10, 10, 'DF');	// Totaal
 	
 	// Totaal score
 	
