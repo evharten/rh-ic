@@ -160,6 +160,10 @@ if ($typeComp == "sticker")
 	$pdf->Rect(85, 222, 70, 10, 'DF');	// Totaal Score
 	
 	// Uitleg competitie
+	$pdf->SetXY(15, 227);
+	$pdf->Cell(200, 80, $spInstructie);
+	
+	
 	
 	// SP instructies pagina 2 (2 zijdig printen!)
 	
