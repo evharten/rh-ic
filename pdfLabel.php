@@ -67,8 +67,8 @@ class PDF_Label extends FPDF {
         '8600' => array('paper-size'=>'letter',    'metric'=>'mm',    'marginLeft'=>7.1,         'marginTop'=>19,         'NX'=>3,     'NY'=>10,     'SpaceX'=>9.5,         'SpaceY'=>3.1,     'width'=>66.6,         'height'=>25.4,        'font-size'=>8),
         'L7163'=> array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>5,        'marginTop'=>15,         'NX'=>2,    'NY'=>7,    'SpaceX'=>25,        'SpaceY'=>0,    'width'=>99.1,        'height'=>38.1,        'font-size'=>9),
         '3422' => array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>0,        'marginTop'=>8.5,         'NX'=>3,    'NY'=>8,    'SpaceX'=>0,        'SpaceY'=>0,    'width'=>70,        'height'=>35,        'font-size'=>9),
-		'staples' => array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>3.5,        'marginTop'=>11.5,         'NX'=>3,    'NY'=>8,    'SpaceX'=>-2,        'SpaceY'=>0,    'width'=>70,        'height'=>35,        'font-size'=>9)
-                'quantore' => array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>0,        'marginTop'=>0,         'NX'=>3,    'NY'=>8,    'SpaceX'=>-0,        'SpaceY'=>0,    'width'=>70,        'height'=>37,        'font-size'=>9),
+		'staples' => array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>3.5,        'marginTop'=>11.5,         'NX'=>3,    'NY'=>8,    'SpaceX'=>-2,        'SpaceY'=>0,    'width'=>70,        'height'=>35,        'font-size'=>9),
+                'quantore' => array('paper-size'=>'A4',        'metric'=>'mm',    'marginLeft'=>0,        'marginTop'=>0,         'NX'=>3,    'NY'=>8,    'SpaceX'=>-0,        'SpaceY'=>0,    'width'=>70,        'height'=>37,        'font-size'=>9)
     );
 
     // Constructor
