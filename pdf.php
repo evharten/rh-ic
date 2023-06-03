@@ -54,7 +54,7 @@ if ($typeComp == "sticker")
 	$pdf->SetXY(30, 60);
 	$pdf->Cell(40, 8, "Wedstrijd datum");
 	$pdf->SetXY(66, 60);
-	$pdf->Cell(40, 8, "            -           -   ".date("Y"));
+	$pdf->Cell(40, 8, "           -           -   ".date("Y"));
 	
 	// KNSA Nummer
 	$pdf->SetFillColor(255);
@@ -66,6 +66,12 @@ if ($typeComp == "sticker")
 	$pdf->Cell(20, 8, $knsanummer);
 	
 	// Wedstrijd x van 6
+	$pdf->SetFillColor(255);
+	$pdf->Rect(100, 70, 20, 8, 'DF');
+	$pdf->SetFont('Arial','B',10);
+	$pdf->SetXY(120, 70);
+	$pdf->Cell(20, 8, "wedstrijd van de 6");
+	
 	
 	// Kaart definities en score vakjes
 	
