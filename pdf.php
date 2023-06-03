@@ -28,5 +28,8 @@ if ($typeComp == "sticker")
 }
  else 
 {
+	$pdf = new FPDF('A4');
+	$pdf->AddPage();
+	$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
 }	 
 ?>
