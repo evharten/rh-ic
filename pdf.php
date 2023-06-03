@@ -139,7 +139,7 @@ if ($typeComp == "sticker")
 	$pdf->Cell(10, 8, 'x 6 =');
 	$pdf->Rect(115, 170, 40, 10, 'DF');	// Totaal
 	
-	$pdf->Rect(105, 180, 50, 10, 'DF');	// Totaal Score
+	$pdf->Rect(105, 182, 50, 10, 'DF');	// Totaal Score
 	
 	// Totaal score
 	
