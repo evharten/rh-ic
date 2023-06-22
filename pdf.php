@@ -23,7 +23,7 @@ if ($typeComp == "sticker")
 	for ($x = 0; $x < $aantal; $x++)
 	{
 		$nr = $x+1;
-		$text = sprintf("%s\n%s\n%s\n%s", "$compNaam", "Naam: $naam", "KNSA: $knsanummer", "Volgnr. $nr");
+		$text = sprintf("%s\n%s\n%s\n%s", "$compNaam", "Naam: $naam", "KNSA: $knsanummer", "Kaart. $nr");
 		$pdf->Add_Label($text);
 	}
 
