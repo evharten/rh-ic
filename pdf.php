@@ -22,8 +22,9 @@ if ($typeComp == "sticker")
 
 	for ($x = 0; $x < $aantal; $x++)
 	{
-			$text = sprintf("%s\n%s\n%s", "$compNaam", "Naam: $naam", "KNSA: $knsanummer");
-			$pdf->Add_Label($text);
+		$nr = $x+1;
+		$text = sprintf("%s\n%s\n%s\n%s", "$compNaam", "Naam: $naam", "KNSA: $knsanummer", "Volgnr. $nr");
+		$pdf->Add_Label($text);
 	}
 
 	$pdf->Output("InterneCompetitie_$knsanummer.pdf", 'I');
