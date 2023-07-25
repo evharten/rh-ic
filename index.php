@@ -20,7 +20,8 @@ foreach($competities AS $compIndex => $compData)
 </select>
 </td></tr>
 <tr><td>Naam</td><td><input type="text" name="naam" size=40></td></tr>
-<tr><td>KNSA Nummer</td><td><input type="text" name="knsa" size=40></td></tr>
+<tr><td>KNSA-Nummer</td><td><input type="text" name="knsa" size=40></td></tr>
+<tr><td>KNSA-Nummer BaCo</td><td><input type="text" name="baco" size=40></td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
 <tr><td colspan="2">&nbsp;</td></tr>
 <tr><td colspan="2"><input type="submit" name="Stickers genereren"></td></tr>
