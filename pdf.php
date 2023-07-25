@@ -16,7 +16,7 @@ $page = 0;
 
 $myfile = fopen("log.txt", "w") or die("Unable to open file!");
 $nu = date("Y-m-d H:i:s");
-$txt = "$nu : $knsa - $naam - $compNaam - $baco\n";
+$txt = "$nu : $knsanummer - $naam - $compNaam - $baco \n";
 fwrite($myfile, $txt);
 
 if ($typeComp == "sticker")
