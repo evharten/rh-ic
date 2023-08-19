@@ -44,7 +44,7 @@ if ($typeComp == "sticker")
 
 		for ($y = $x; $y < $yToGo; $y++)
 		{
-			$text = "xxxxxxxxxxxx\nxxxxxxxxxxx\nxxxxxxxxxxx\nxxxxxxxxxx";
+			$text = "xxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxxxxxxxxxxxx";
 			$pdf->Add_Label($text);
 		}
 	}
