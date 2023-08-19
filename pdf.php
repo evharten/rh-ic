@@ -33,9 +33,16 @@ if ($typeComp == "sticker")
 		$text = sprintf("%s\n%s\n%s\n%s", "$compNaam", "Naam: $naam", "KNSA: $knsanummer", "Kaart. $nr");
 		$pdf->Add_Label($text);
 	}
-	if ($x < 24)
+	if ($x < 24 || ($aantal > 24 && $x < 48))
 	{
-		for ($y = $x; $y < 24; $y++)
+		if ($aantal > 24)
+		{
+			$yToGo = 48;
+		} else {
+			$yToGo = 24;
+		}
+
+		for ($y = $x; $y < $yToGo; $y++)
 		{
 			$text = "xxxxxxxxxxxx\nxxxxxxxxxxx\nxxxxxxxxxxx\nxxxxxxxxxx";
 			$pdf->Add_Label($text);
